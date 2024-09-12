@@ -1,0 +1,138 @@
+:root {
+    --mainFont: "Poppins";
+    --fontWhite: #ffffff;
+}
+
+/* Hero Header */
+.doctors-hero-header {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("../Images/docots.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #0c00ad;
+    padding-left: 5%;
+    animation: slideLeft 0.5s ease-out;
+}
+
+
+@keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateY(200px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+.doctors-hero-header-content {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    width: 100%;
+}
+
+.doctors-hero-title {
+    font-size: 3em;
+    margin: 0;
+    color: #084e88;
+    width: 100%;
+}
+
+#doctors-hero-text {
+    font-size: 1.8em;
+    margin-top: 2%;
+    -webkit-text-stroke: #ffffff 0.1px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+/* Doctors Section */
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    gap: 50px;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.44);
+    overflow: hidden;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.cardimage {
+    width: 30%;
+}
+
+.cardimage img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 70%;
+}
+
+.card-text h2 {
+    font-family: var(--mainFont);
+    color: #000;
+    font-size: 1.5em;
+    padding-bottom: 1%;
+}
+
+.card-text p {
+    font-family: var(--mainFont);
+    color: rgb(147, 146, 146);
+    font-size: 1em;
+    padding-bottom: 1%;
+}
+
+.card-text .icons {
+    display: flex;
+    gap: 5px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.card:hover{
+    transform: scale(1.08);
+}
+
+@media (max-width:600px){
+    .doctors-grid {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+}

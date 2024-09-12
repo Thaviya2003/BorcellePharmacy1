@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borcelle Hospitals</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/reserve.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./Images/logo.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./pharmacy.html">Pharmacy</a></li>
+            <li><a href="./doctors.html">Doctors</a></li>
+            <li><a href="./reservation.html">Appointments</a></li>
+            <li><button class="join-button" href="#">Join</button></li>
+        </ul>
+    </nav>
+
+    <div class="reserve-hero-header">
+        <div class="reserve-hero-header-content">
+            <h1 class="hero-title">Schedule Your Appointment</h1>
+            <p id="reserve-hero-text">Expert care and a variety of services to meet your needs.</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="appointment-container">
+            <form action="#" class="appointment">
+                <h1>Appointment</h1>
+                <div class="title-section">
+                    <h3>Personal Information</h3>
+                </div>
+                <div class="appointment-input">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Your Fullname">
+                </div>
+                <div class="appointment-input">
+                    <label for="number">Contact</label>
+                    <input type="number" id="number" name="number" required placeholder="Your Contact Number">
+                </div>
+                <div class="appointment-input">
+                    <label for="address">Address</label>
+                    <input type="address" id="adress" name="address" required placeholder="Your Address">
+                </div>
+
+                <div class="title-section">
+                    <h3>Appointment Information</h3>
+                </div>
+                <div class="appointment-input">
+                    <label for="reason">Service</label>
+                    <select name="reason" id="reason">
+                        <option value="eye">Eye Care</option>
+                        <option value="dental">Dental Care</option>
+                        <option value="doctor">Consult Doctor</option>
+                    </select>
+                </div>
+                <div class="appointment-input">
+                    <label for="address">Date</label>
+                    <input type="date" id="date" name="date" required placeholder="Your Address">
+                </div>
+                <div class="appointment-input">
+                    <label for="address">Prefred Doctor</label>
+                    <select name="reason" id="reason">
+                        <option value="eye">Dr Emily Carter</option>
+                        <option value="dental">Dr Michael Thompson</option>
+                        <option value="doctor">Dr Olivia Martinez</option>
+                    </select>
+                </div>
+                <div class="button-container">
+                    <button>Send</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>

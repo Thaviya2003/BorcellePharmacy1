@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --mainFont:"Poppins";
+    --fontWhite:#ffffff;;
+}
+
+
+.contact-hero-header{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    background-image: url("../Images/contact.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #0c00ad; /* Ensure the text color is visible on the image */
+    padding-left: 5%; 
+    animation: slideLeft 0.5s ease-out;
+}
+
+
+@keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateY(200px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+.contact-hero-header-content{
+    position: relative;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    width: 100%;
+}
+
+#title{
+    font-size: 2em;
+    margin: 0;
+    color: #3021fedb;
+    width: 100%;
+}
+.hero-title {
+    font-size: 3em;
+    margin: 0;
+    color: #083f8b;
+    width: 100%;
+}
+
+#contact-hero-text{
+    font-size: 1.3em;
+    margin-top: 2%;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding-top: 15%;
+    margin-bottom: 5%;
+ 
+}
+.contact-container{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background: rgb(48, 82, 144);
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    font-family: "Open sans",sans-serif;
+    font-weight: bolder;
+}
+.form-container{
+    padding: 20px;
+}
+.form-container h3{
+    font-size: clamp(10px,3vw,100px);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form label{
+    font-size: clamp(8px,1.5vw,30px);
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: black;
+    border-radius: 0.4rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background: #ffffff;
+    font-family: var(--mainFont);
+    color: #000000;
+    font-size: clamp(8px,1.5vw,30px);
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.contact-form .send-button:hover{
+    text-transform: uppercase;
+    background: hsla(209, 100%, 21%, 0.8);
+    transition: all .3s ease-out;
+    color: white;
+
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+
+}
+/*Contact page responsive*/
+@media (max-width:964px){
+    .contact{
+        padding-top: 20%;
+    }
+    .contact-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media (max-width:700px){
+    .contact{
+        padding-top: 20%;
+    }
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .contact-map iframe{
+        height: 400px;
+    }  
+}
+@media (max-width:650px){
+    .contact{
+        padding-top: 30%;
+    }
+}
+
+
