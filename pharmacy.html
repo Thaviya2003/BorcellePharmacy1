@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borcelle Hospitals</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/pharmacy.css">
-    <link rel="stylesheet" href="./styles/services.css">
-    <link rel="stylesheet" href="./styles/reserve.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -36,92 +33,649 @@
             <li><button class="join-button" href="#">Join</button></li>
         </ul>
     </nav>
-    <div class="pharmacy-hero-header">
-        <div class="pharmacy-hero-header-content">
+    <section class="pharmacy-hero-header">
+        <section class="pharmacy-hero-header-content">
             <h1 class="pharmacy-hero-title">Borcelle Hospitals Pharmacy</h1>
             <p id="pharmacy-hero-text">Access a wide range of medications and expert pharmaceutical advice,</p>
+        </section>
+    </section>
+
+    <section class="button-section">
+        <div class="button-section-container">
+            <button class="section-button" data-target="analgesics">Analgesics</button>
+            <button class="section-button" data-target="antibiotics">Antibiotics</button>
+            <button class="section-button" data-target="antidepressent">Antidepressants</button>
+            <button class="section-button" data-target="antihistamine">Antihistamine</button>
+            <button class="section-button" data-target="antihypertensives">Antihypertensives </button>
+
         </div>
-    </div>
-
-    <div class="services-section">
-        <div class="services-container">
-            <div class="services-card">
-                <div class="service-image">
-                    <img src="./Images/antidepressent.webp" alt="">
+    </section>
+    
+    <section class="pharmacy-section" id="analgesics">
+        <h1>Analgesics</h1>
+        <div class="medi-card-container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/paracetamol.webp" alt="Paracetamol">
                 </div>
-                <div class="service-title">
-                    <h2>Anti-Depressents</h2>
-                    <p>5$</p>
-                    <Button class="reserveBtn"><a href="./reservation.html">Buy Now</a></Button>
+                <div class="text-content">
+                    <h1 class="med-name">Paracetamol</h1>
+                    <p class="price">250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
-            <div class="services-card">
-                <div class="service-image">
-                    <img src="./Images/antibiotics.jpg" alt="">
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/asprin.webp" alt="Asprin">
                 </div>
-                <div class="service-title">
-                    <h2>Antibiotics</h2>
-                    <p>8$</p>
+                <div class="text-content">
+                    <h1 class="med-name">Asprin</h1>
+                    <p class="price">380 <span>LKR</span></p>
                 </div>
-                <Button class="reserveBtn"><a href="./reservation.html">Buy Now</a></Button>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
             </div>
 
-            <div class="services-card">
-                <div class="service-image">
-                    <img src="./Images/operting.jpg" alt="">
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/ibuprofen.webp" alt="ibuprofen">
                 </div>
-                <div class="service-title">
-                    <h2>Analgesics</h2>
-                    <p>10$</p>
+                <div class="text-content">
+                    <h1 class="med-name">Ibuprofen</h1>
+                    <p class="price">250 <span>LKR</span></p>
                 </div>
-                <Button class="reserveBtn"><a href="./reservation.html">Make Appointment</a></Button>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/morphine.webp" alt="morphine">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Morphine</h1>
+                    <p class="price">247 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/codeine.webp" alt="Codeine">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Codeine</h1>
+                    <p class="price">250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/naproxen.webp" alt="naproxen">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Naproxen</h1>
+                    <p class="price">560 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
             </div>
         </div>
 
-        <div class="form-container">
-            <div class="appointment-container">
-                <form action="#" class="appointment">
-                    <h1>Buy Medications</h1>
-                    <div class="title-section">
-                        <h3>Personal Information</h3>
-                    </div>
-                    <div class="appointment-input">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" required placeholder="Your Fullname">
-                    </div>
-                    <div class="appointment-input">
-                        <label for="number">Contact</label>
-                        <input type="number" id="number" name="number" required placeholder="Your Contact Number">
-                    </div>
-                    <div class="appointment-input">
-                        <label for="address">Address</label>
-                        <input type="address" id="adress" name="address" required placeholder="Your Address">
-                    </div>
-    
-                    <div class="title-section">
-                        <h3>Medication Information</h3>
-                    </div>
-                    <div class="appointment-input">
-                        <label for="reason">Medicine</label>
-                        <select name="reason" id="reason">
-                            <option value="eye">Anti-Depressents</option>
-                            <option value="dental">Antibiotics</option>
-                            <option value="doctor">Analgesics</option>
-                        </select>
-                    </div>
-                    <div class="appointment-input">
-                        <label for="address">Payment</label>
-                        <select name="reason" id="reason">
-                            <option value="eye">Cash on Delivery</option>
-                            <option value="dental">Online</option>
-                        </select>
-                    </div>
-                    <div class="button-container">
-                        <button>Buy</button>
-                    </div>
-                </form>
+    </section>
+
+    <section class="pharmacy-section" id="antibiotics">
+
+        <h1>Antibiotics</h1>
+        <div class="medi-card-container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/penicillin.jpg" alt="penicillin">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Penicillin</h1>
+                    <p class="price">250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
             </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/amoxcillin.jpg" alt="amoxcillin">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Amoxcillin</h1>
+                    <p class="price">380 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Clindamycin.jpg" alt="Clindamycin">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Clindamycin</h1>
+                    <p class="price">1250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/azithromycin.jpg" alt="azithromycin">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Azithromycin</h1>
+                    <p class="price">1200 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/doxycyline.jpg" alt="doxycyline">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Doxycyline</h1>
+                    <p class="price">2250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/ciprofloxacin.jpg" alt="ciprofloxacin">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Ciprofloxacin</h1>
+                    <p class="price">560 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="pharmacy-section" id="antidepressent">
+        <h1>Antidepressants</h1>
+        <div class="medi-card-container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Fluoxetine.jpg" alt="Fluoxetine">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Fluoxetine</h1>
+                    <p class="price">1560 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/vanafexlime.jpg" alt="vanafexlime">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Vanlafexine</h1>
+                    <p class="price">3800 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Phenelzine.jpg" alt="Phenelzine">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Phenelzine</h1>
+                    <p class="price">1250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Amitriptyline.jpg" alt="Amitriptyline">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Amitriptyline</h1>
+                    <p class="price">1200 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Trazodone.jpg" alt="Trazodone">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Trazodone</h1>
+                    <p class="price">2250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Bupropion.jpg" alt="Bupropion">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Bupropion</h1>
+                    <p class="price">560 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <section class="pharmacy-section" id="antihistamine">
+        <h1>Antihistamine</h1>
+        <div class="medi-card-container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Diphenhydramine.jpg" alt="Diphenhydramine">
+                </div>
+                <div class="text-content">
+                    <h1>Diphenhydramine</h1>
+                    <p class="price">1560 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Loratadine.jpg" alt="Loratadine">
+                </div>
+                <div class="text-content">
+                    <h1>Loratadine</h1>
+                    <p class="price">3800 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Cetirizine.jpg" alt="Cetirizine">
+                </div>
+                <div class="text-content">
+                    <h1>Cetirizine</h1>
+                    <p class="price">1250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Fexofenadine.jpg" alt="Fexofenadine">
+                </div>
+                <div class="text-content">
+                    <h1>Fexofenadine</h1>
+                    <p class="price">1200 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Levocetirizine.jpg" alt="Levocetirizine">
+                </div>
+                <div class="text-content">
+                    <h1>Levocetirizine</h1>
+                    <p class="price">2250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Chlorpheniramine.jpg" alt="Chlorpheniramine">
+                </div>
+                <div class="text-content">
+                    <h1>Chlorpheniramine</h1>
+                    <p class="price">560 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="pharmacy-section" id="antihypertensives">
+        <h1>Antihypertensives</h1>
+        <div class="medi-card-container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Lisinopril.jpg" alt="Lisinopril">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Lisinopril</h1>
+                    <p class="price">1560 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Amlodipine.jpg" alt="Amlodipine">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Amlodipine</h1>
+                    <p class="price">3800 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Losartan.jpg" alt="Losartan">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Losartan</h1>
+                    <p class="price">1250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Clonidine.jpg" alt="Clonidine">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Clonidine</h1>
+                    <p class="price">1200 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="./Images/Hydrochlorothiazide.jpg" alt="Hydrochlorothiazide">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Hydrochlorothiazide</h1>
+                    <p class="price">2250 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img class="med-image" src="./Images/Metoprolo.jpg" alt="Metoprolo">
+                </div>
+                <div class="text-content">
+                    <h1 class="med-name">Metoprolo</h1>
+                    <p class="price">560 <span>LKR</span></p>
+                </div>
+                <div class="quantity-section">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="quantity" name="quantity" min="0" value="0">
+                </div>
+                <div class="cart-button">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-table">
+        <table>
+            <caption>Cart Summary</caption>
+            <thead>
+              <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    </section>
+    <section class="confirm-button">
+        <button id="save">Save to Favourites</button>
+        <button id="confirm">Buy Now</button>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <img src="./Images/logo.png" alt="">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="./contact.html">Contact us</a></li>
+        <li><a href="./services.html">Our Services</a></li>
+        <li><a href="./reservation.html">Appointments</a></li>
+        <li><a href="./pharmacy.html">Pharmacy</a></li>
+        <li><a href="./doctors.html">Stafff</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        Borcelle hospitals © 2024- All rights reserved
+        </div>
+        </div>
+    </footer>
 </body>
 <script src="./script.js"></script>
 </html>
